@@ -6,7 +6,7 @@ const IncomeExpenses = () => {
 
   let income = 0;
   let expense = 0;
-  const amount = transactions.map((transaction) => {
+  transactions.forEach((transaction) => {
     if (transaction.amount > 0 || transaction.amount === 0) {
       income += transaction.amount;
     } else {
